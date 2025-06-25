@@ -1,3 +1,7 @@
+@extends('layouts.app')
+
+@section('content')
+
 <div>
     <div class="border-1 w-[60%] md:w-fit h-screen">
         <!-- Sección superior (perfil) -->
@@ -34,3 +38,5 @@
         </div>
     </div>
 </div>
+
+@endsection
