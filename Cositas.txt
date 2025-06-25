@@ -1,0 +1,15 @@
+A. Instalacion desdes de tener .env:
+1. composer upgrade
+2. php artisan key:generate
+3. npm install tailwindcss @tailwindcss/vite
+
+B. Ejecutar tailwindcss:
+- npm run dev
+
+
+C. Clases personalizadas:
+-Si quieres crear una clase de tailwindcss puedes hacerlo en: resources/css/app.css
+
+D. Nuevas rutas:
+- Ahora para poner los iconos svg usar: "src="{{ asset('svg/icons/<Nombre del svg>.svg') }}".
+- Para funciones independientes de casa rol (admin, seller, consumer y guest) agregarlas en su respectiva carpeta: resources/views/
