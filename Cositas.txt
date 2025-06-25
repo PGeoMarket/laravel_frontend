@@ -13,3 +13,6 @@ C. Clases personalizadas:
 D. Nuevas rutas:
 - Ahora para poner los iconos svg usar: "src="{{ asset('svg/icons/<Nombre del svg>.svg') }}".
 - Para funciones independientes de casa rol (admin, seller, consumer y guest) agregarlas en su respectiva carpeta: resources/views/
+
+
+holi uwu
