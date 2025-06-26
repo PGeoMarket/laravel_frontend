@@ -25,7 +25,7 @@
         </h1>
 
         {{-- Formulario de inicio --}}
-        <form method="POST" action="{{ route('login') }}" class="space-y-4">
+        <form method="POST"  class="space-y-4">
             @csrf
             <input type="email" name="email" placeholder="Correo" required autofocus
                 class="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-gray-400" />
@@ -34,7 +34,7 @@
                 class="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-gray-400" />
             
             <div class="flex justify-between gap-2">
-                <a href="{{ route('register') }}" class="w-1/2 bg-gray-300 text-gray-700 py-2 rounded-md text-center hover:bg-gray-400">
+                <a  class="w-1/2 bg-gray-300 text-gray-700 py-2 rounded-md text-center hover:bg-gray-400">
                     registrarse
                 </a>
                 <button type="submit" class="w-1/2 bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">
@@ -43,7 +43,7 @@
             </div>
 
             <div class="mt-4 text-center text-sm">
-                <a href="{{ route('password.request') }}" class="text-blue-500 hover:underline">
+                <a  class="text-blue-500 hover:underline">
                     recuperar contraseña
                 </a>
             </div>
