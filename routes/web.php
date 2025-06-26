@@ -7,3 +7,7 @@ Route::get('/', function () {
 });
 
 Route::view('/kkck', 'includes.login');
+
+Route::view('/slidebar', 'includes.sidebar.seller');
+
+route::view('/navbar', 'includes.navbar');
