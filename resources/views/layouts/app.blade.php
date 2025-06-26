@@ -7,15 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body>
+<body class="bg-background">
 
     <header>
         @include('includes.navbar')
     </header>
-
-    <main class="flex flex-wrap m-10 justify-center gap-7">
+    {{-- no tocar ese pt-16 --}}
+    <main class="pt-16">
         @yield('content')
     </main>
 

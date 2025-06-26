@@ -11,3 +11,5 @@ Route::view('/kkck', 'includes.login');
 Route::view('/slidebar', 'includes.sidebar.seller');
 
 route::view('/navbar', 'includes.navbar');
+
+Route::view('/addProduct', 'vendedor.addProduct');
