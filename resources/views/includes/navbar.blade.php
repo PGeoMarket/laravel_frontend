@@ -18,6 +18,7 @@
         <div>
             <div class="flex items-center gap-x-2 ml-4">
                 <img src="{{ asset('svg/icons/teme.svg') }}" alt="Tema" class="cursor-pointer" />
+                <a href="{{ route('Registrarse-como') }}"></a>
                 <img src="{{ asset('svg/icons/menu.svg') }}" class="cursor-pointer" x-on:click="open=!open" />
             </div>
         </div>
