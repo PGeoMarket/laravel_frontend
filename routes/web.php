@@ -7,3 +7,11 @@ Route::get('/', function () {
 });
 
 Route::view('/login', 'includes.login');
+
+Route::view('/slidebar', 'includes.sidebar.seller');
+
+route::view('/navbar', 'includes.navbar');
+
+Route::view('/addProduct', 'vendedor.addProduct');
+
+
