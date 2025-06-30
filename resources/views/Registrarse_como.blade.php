@@ -7,12 +7,12 @@
 </head>
 <body>
 
-    <div class="bg-amber-500 border border-gray-300 rounded-lg p-4 flex items-center ">
-        <img src="public/svg/icons/back-icon.svg" alt="">
+
+        <img src="{{ asset('svg/icons/back-icon.svg') }}" alt="">
         <div class="ml-4">
-            <img src="public/svg/icons/cart.svg" alt="">
+            <img src="{{ asset('svg/icons/cart.svg') }}" alt="">
         </div>
-    </div>
+  
     
 </body>
 </html>
