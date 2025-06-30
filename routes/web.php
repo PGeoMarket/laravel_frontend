@@ -14,4 +14,3 @@ route::view('/navbar', 'includes.navbar');
 
 Route::view('/addProduct', 'vendedor.addProduct');
 
-Route::view('/Registrarse-como', 'Registrarse_como');
