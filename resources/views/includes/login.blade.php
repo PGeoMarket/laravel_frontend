@@ -53,7 +53,7 @@
             {{-- Líneas separadoras --}}
             <div class="flex items-center justify-center mt-2">
                 <div class="w-20 h-px bg-gray-300"></div>
-                <span class="mx-6 text-gray-400 text-xs"></span>
+                <span class="mx-5 text-gray-400 text-xs"></span>
                 <div class="w-20 h-px bg-gray-300"></div>
             </div>
 
