@@ -4,7 +4,7 @@
 
     {{-- Contenedor principal del formulario --}}
     <form action="">
-        <div class="border-1 border-borde2 bg-blancoSucio rounded-[20px] p-3 h-[calc(100vh-(4rem+24px))] flex flex-col ">
+        <div class="border-1 border-borde2 bg-blancoSucio rounded-[20px] p-3 h-[calc(100vh-(4rem+24px))] flex flex-col">
 
         {{-- Botones de acción alineados a la derecha --}}
         <div class="flex justify-end gap-2">
