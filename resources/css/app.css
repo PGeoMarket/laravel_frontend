@@ -28,3 +28,8 @@
 .btn_negative {
   @apply bg-borde1 text-textosNoNegro px-4 py-1 rounded-[7px] text-[1em] md:text-[1.4em] border border-borde2;
 }
+
+.btn_azulPotente{
+      @apply bg-azulPotente text-white px-4 py-1 rounded-[7px] text-[1em] md:text-[1.4em] border ;
+
+}
