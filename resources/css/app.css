@@ -20,9 +20,9 @@
 }
 
 .btn_positive {
-  @apply bg-azulSecundario text-white px-4 py-1 rounded-[7px] text-[1em] md:text-[1.4em] border border-[#387FE9];
+  @apply bg-azulSecundario text-white px-3 py-0.5 text-sm md:text-base rounded-md border border-[#387FE9];
 }
 
 .btn_negative {
-  @apply bg-borde1 text-textosNoNegro px-4 py-1 rounded-[7px] text-[1em] md:text-[1.4em] border border-borde2;
+  @apply bg-borde1 text-textosNoNegro px-3 py-0.5 text-sm md:text-base rounded-md border border-borde2;
 }

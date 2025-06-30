@@ -6,4 +6,4 @@ Route::get('/', function () {
     return view('includes.sidebar.seller');
 });
 
-Route::view('/kkck', 'includes.login');
+Route::view('/login', 'includes.login');
