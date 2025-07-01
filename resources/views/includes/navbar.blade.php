@@ -1,7 +1,7 @@
 <div x-data="{ open: false }" class="">
     <nav class="bg-[#f8fafc]  border-b border-[#e5e7eb] px-4 py-2 flex items-center justify-between fixed w-full h-16">
         <!-- logo y nombre -->
-        <div class="flex items-center">
+        <div class="flex items-center mr-3">
             <img src="{{ asset('svg/icons/logo.svg') }}" alt="GeoMarket Logo" class="cursor-pointer" />
 
             <img src="{{ asset('svg/icons/geomarket.svg') }}" alt="" class="cursor-pointer hidden md:block" />
