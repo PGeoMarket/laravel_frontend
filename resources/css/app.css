@@ -22,14 +22,14 @@
 }
 
 .btn_positive {
-  @apply bg-azulSecundario text-white px-3 py-0.5 text-sm md:text-base rounded-md border border-[#387FE9] min-w-[120px] text-center;
+  @apply bg-azulSecundario text-white px-2 py-0.5 text-sm md:text-base rounded-md border border-[#387FE9] min-w-[100px] text-center;
 }
 
 .btn_negative {
-  @apply bg-borde1 text-textosNoNegro px-3 py-0.5 text-sm md:text-base rounded-md border border-borde2 min-w-[120px] text-center;
+  @apply bg-borde1 text-textosNoNegro px-2 py-0.5 text-sm md:text-base rounded-md border border-borde2 min-w-[100px] text-center;
 }
 
 .btn_azulPotente{
-      @apply bg-azulPotente text-white px-4 py-1 rounded-[7px] text-[1em] md:text-[1.4em] border ;
+      @apply bg-azulPotente text-white px-2 py-1 rounded-[7px] text-[1em] md:text-[1.4em] border ;
 
 }
