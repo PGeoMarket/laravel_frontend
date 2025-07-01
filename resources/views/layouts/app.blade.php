@@ -12,7 +12,7 @@
 
 <body class="bg-backgroun">
 
-    <header>
+    <header class="">
         @include('includes.navbar')
     </header>
     {{-- no tocar ese pt-16 --}}
