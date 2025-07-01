@@ -10,13 +10,13 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body class="bg-background">
+<body class="bg-backgroun">
 
     <header class="">
         @include('includes.navbar')
     </header>
     {{-- no tocar ese pt-16 --}}
-    <main class="pt-16">
+    <main class="pt-19 p-3">
         @yield('content')
     </main>
 
