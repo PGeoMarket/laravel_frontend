@@ -1,7 +1,7 @@
+@extends('layouts.app')
 
+@section('content')
 
-
-<body class="bg-black">
     <img src="{{ asset('svg/icons/back-icon.svg') }}" alt="Volver" class="cursor-pointer">
     <div class="">
 
@@ -15,6 +15,6 @@
             <span class="text-white text-lg">Consumidor</span>
         </div>
     </div>
-</body>
 
 
+@endsection
