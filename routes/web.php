@@ -10,6 +10,9 @@ route::view('/slidebar/guest','includes.sidebars.guest');
 
 Route::view('/login', 'includes.login');
 
+Route::view('/registroC', 'Registro_consumidor');
+Route::view('/registroV', 'Registro_vendedor');
+
 Route::view('/slidebar', 'includes.sidebar.seller');
 
 route::view('/navbar', 'includes.navbar');
@@ -23,3 +26,11 @@ Route::view('/registrarse_como', 'registrarse_como');
 Route::view('/editProduct', 'vendedor.editProduct');
 
 route::view('/notifications', 'notifications');
+
+Route::view('/ConsumerProfile', 'consumer.profile');
+
+Route::view('/productdetail', 'productdetail');
+
+Route::view('/reasonforthereport', 'reasonforthereport');
+
+
