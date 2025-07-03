@@ -1,5 +1,5 @@
 <div x-data="{ open: false }" class="">
-    <nav class="bg-[#f8fafc]  border-b border-[#e5e7eb] px-4 py-2 flex items-center justify-between fixed w-full h-16">
+    <nav class="bg-[#f8fafc]  border-b border-[#e5e7eb] px-4 py-2 flex items-center justify-between fixed w-full h-16 z-50">
         <!-- logo y nombre -->
         <div class="flex items-center mr-3">
             <img src="{{ asset('svg/icons/logo.svg') }}" alt="GeoMarket Logo" class="cursor-pointer" />
@@ -18,7 +18,7 @@
         <div>
             <div class="flex items-center gap-x-2 ml-4">
                 <img src="{{ asset('svg/icons/teme.svg') }}" alt="Tema" class="cursor-pointer" />
-    
+
                 <img src="{{ asset('svg/icons/menu.svg') }}" class="cursor-pointer" x-on:click="open=!open" />
             </div>
         </div>
