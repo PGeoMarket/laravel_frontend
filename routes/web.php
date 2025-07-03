@@ -18,3 +18,4 @@ Route::view('/home', 'home');
 
 Route::view('/registrarse_como', 'registrarse_como');
 
+Route::view('/ConsumerProfile', 'consumer.profile');
