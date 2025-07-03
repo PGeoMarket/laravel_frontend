@@ -1,21 +1,15 @@
-<!DOCTYPE html>
-<html lang="es">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeoMarket - Iniciar sesión</title>
-    @vite('resources/css/app.css') {{-- Tailwind Vite --}}
-</head>
+@section('content')
 
-<body class="bg-gray-200 flex items-center justify-center min-h-screen px-3">
-
-    <div class="bg-white rounded-xl shadow-lg p-4 pb-6 w-full 
+    <div  class="flex items-center justify-center min-h-screen px-3">
+        <div
+        class="bg-white rounded-xl shadow-lg p-4 pb-6 w-full 
                 max-w-[360px] 
-                md:max-w-[300px] 
+                md:max-w-[350px] 
                 lg:max-w-[360px] 
                 relative">
-        
+
         {{-- Botón volver con ícono --}}
         <a href="{{ url()->previous() }}" class="absolute top-4 left-4">
             <img src="{{ asset('svg/icons/back-icon.svg') }}" alt="Volver" class="w-8 h-8">
@@ -33,7 +27,7 @@
         </div>
 
         {{-- Formulario --}}
-        <form method="POST" class="space-y-4">
+        <form class="space-y-4">
             @csrf
 
             {{-- Campo de correo --}}
@@ -41,21 +35,21 @@
                 class="w-full px-4 py-1 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 border-borde2 placeholder-gray-300" />
 
             {{-- Campo de contraseña --}}
-            <input type="password" name="password" placeholder="Contraseña" required
+            <input type="password" name="password" placeholder="Contraseña" required 
                 class="w-full px-4 py-1 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 border-borde2 placeholder-gray-300" />
 
             {{-- Botones siempre juntos --}}
-            <div class="flex justify-center gap-1 flex-nowrap">
+            <div class="flex justify-center gap-1 flex-nowrap ">
                 <a href="#" class="btn_negative">Registrarse</a>
                 <button type="submit" class="btn_positive">Iniciar sesión</button>
             </div>
 
             {{-- Líneas separadoras --}}
-            <div class="flex items-center justify-center p-2">
+            <div class="flex items-center  justify-center p-2">
                 <div class="w-20 h-px bg-gray-300"></div>
-                <span class="mx-3"></span>
-                <div class="w-20 h-px bg-gray-300"></div>
+                <div class="w-20 h-px bg-gray-300 ml-3"></div>
             </div>
+
 
             {{-- Recuperar contraseña --}}
             <div class="mt-4 text-center text-[15px] ">
@@ -64,6 +58,5 @@
         </form>
     </div>
 
-</body>
-
-</html>
+    </div>
+@endsection

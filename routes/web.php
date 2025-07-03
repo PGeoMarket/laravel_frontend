@@ -8,6 +8,9 @@ Route::get('/', function () {
 
 Route::view('/login', 'includes.login');
 
+Route::view('/registroC', 'Registro_consumidor');
+Route::view('/registroV', 'Registro_vendedor');
+
 Route::view('/slidebar', 'includes.sidebar.seller');
 
 route::view('/navbar', 'includes.navbar');
