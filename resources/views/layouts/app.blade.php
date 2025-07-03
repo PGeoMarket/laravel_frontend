@@ -10,7 +10,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body class="bg-backgroun">
+<body class="bg-background">
 
     <header class="">
         @include('includes.navbar')
