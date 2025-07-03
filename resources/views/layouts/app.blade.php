@@ -20,13 +20,6 @@
         @yield('content')
     </main>
 
-    {{-- <button class="btn_positive">
-        registrars
-    </button>
-    <button class="btn_negative">
-        cancelar
-    </button> --}}
-
 </body>
 
 </html>
