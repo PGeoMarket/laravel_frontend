@@ -16,7 +16,7 @@
         @include('includes.navbar')
     </header>
     {{-- no tocar ese pt-16 --}}
-    <main class="pt-19 p-3">
+    <main class="pt-18 p-2">
         @yield('content')
     </main>
 
