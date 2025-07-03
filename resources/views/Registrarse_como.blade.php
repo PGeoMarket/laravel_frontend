@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="border border-gray-300 rounded-xl w-fit p-6 self-center mx-auto">
+    <div class="border border-gray-300 rounded-xl w-fit p-6 self-center mx-auto mt-20">
         <!--icono de regreso-->
         <img src="{{ asset('svg/icons/back-icon.svg') }}" alt="Volver" class="cursor-pointer">
 
