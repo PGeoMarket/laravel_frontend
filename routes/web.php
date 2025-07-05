@@ -8,6 +8,8 @@ route::view('/slidebar/buyer','includes.sidebars.buyer');
 
 route::view('/slidebar/guest','includes.sidebars.guest');
 
+route::view('/slidebar/admin','includes.sidebars.admin');
+
 Route::view('/login', 'includes.login');
 
 Route::view('/registroC', 'Registro_consumidor');
@@ -33,4 +35,5 @@ Route::view('/productdetail', 'productdetail');
 
 Route::view('/reasonforthereport', 'reasonforthereport');
 
+Route::view('/chatList', 'chatList');
 
