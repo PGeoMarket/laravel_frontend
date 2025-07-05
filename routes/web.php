@@ -2,11 +2,18 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('includes.sidebar.seller');
-});
+route::view('/slidebar/seller','includes.sidebars.seller');
+
+route::view('/slidebar/buyer','includes.sidebars.buyer');
+
+route::view('/slidebar/guest','includes.sidebars.guest');
+
+route::view('/slidebar/admin','includes.sidebars.admin');
 
 Route::view('/login', 'includes.login');
+
+Route::view('/registroC', 'Registro_consumidor');
+Route::view('/registroV', 'Registro_vendedor');
 
 Route::view('/slidebar', 'includes.sidebar.seller');
 
@@ -18,13 +25,18 @@ Route::view('/home', 'home');
 
 Route::view('/registrarse_como', 'registrarse_como');
 
+Route::view('/editProduct', 'vendedor.editProduct');
+
+route::view('/notifications', 'notifications');
+
 Route::view('/ConsumerProfile', 'consumer.profile');
 
 Route::view('/productdetail', 'productdetail');
 
 Route::view('/reasonforthereport', 'reasonforthereport');
 
-
-
+Route::view('/chatList', 'chatList');
 
 Route::view('/SellerProfile', 'vendedor.profile');
+
+Route::view('/favoritos', 'registered.favoritos');

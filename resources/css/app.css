@@ -29,12 +29,17 @@
     @apply bg-borde1 text-textosNoNegro px-2 py-0.5 text-sm md:text-base rounded-md border border-borde2 min-w-[100px] text-center;
 }
 
-.btn_azulPotente {
+.btn_azulPotente{
     @apply bg-azulPotente text-white px-2 py-0.5 text-sm md:text-base rounded-md border border-azulPotente min-w-[100px] text-center;
 }
 
+.inputs_registro {
+  @apply w-full px-4 py-2 rounded-xl border text-[#393434] bg-[#F7F7F7] border-[#C8C8C8] placeholder:text-[--color-borde2] focus:outline-none focus:ring-2 focus:ring-blue-400;
+}
+
+
 .div_publicacion {
-    @apply cursor-pointer bg-white flex flex-nowrap flex-col md:w-[256px] md:h-[412px] w-[165px] h-[300px] border-[2px] md:border-[3px] border-borde1 px-[5px] pt-[10px] md:px-[10px] md:pt-[10px] rounded-lg;
+    @apply cursor-pointer bg-white flex flex-col md:w-[256px] md:h-[412px] w-[165px] h-[300px] border-[2px] md:border-[3px] border-borde1 px-[5px] pt-[10px] md:px-[10px] md:pt-[10px] rounded-lg;
 }
 
 .estrella {
