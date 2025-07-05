@@ -33,4 +33,6 @@ Route::view('/productdetail', 'productdetail');
 
 Route::view('/reasonforthereport', 'reasonforthereport');
 
+Route::view('/favoritos', 'registered.favoritos');
+
 
