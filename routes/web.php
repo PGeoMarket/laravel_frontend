@@ -20,4 +20,11 @@ Route::view('/registrarse_como', 'registrarse_como');
 
 Route::view('/ConsumerProfile', 'consumer.profile');
 
+Route::view('/productdetail', 'productdetail');
+
+Route::view('/reasonforthereport', 'reasonforthereport');
+
+
+
+
 Route::view('/SellerProfile', 'vendedor.profile');
