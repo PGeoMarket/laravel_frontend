@@ -8,7 +8,7 @@
             <li
                 class="text-white text-[16px] p-2 rounded-xl font-semibold text-center block min-w-[90px]"
                 :class = "{'bg-azulSecundario': open, 'bg-azulPotente': !open}">
-                <button class="w-fit" x-on:click = "open = !open">Filtrar</button>
+                <button class="w-fit" x-on:click = "open = !open" x-on:click.away= "open = false">Filtrar</button>
                 <ul
                     class="absolute bg-white text-textosNoNegro translate-2 min-w-[200px] text-left" x-show = "open">
                     <li class="filtros">Filtrar por precio <img src="{{ asset('svg/icons/arrowBlue.svg') }}"
