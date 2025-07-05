@@ -37,4 +37,6 @@ Route::view('/reasonforthereport', 'reasonforthereport');
 
 Route::view('/chatList', 'chatList');
 
+Route::view('/SellerProfile', 'vendedor.profile');
+
 Route::view('/favoritos', 'registered.favoritos');
