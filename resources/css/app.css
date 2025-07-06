@@ -34,8 +34,13 @@
 }
 
 .inputs_registro {
-  @apply w-full px-4 py-2 rounded-xl border text-[#393434] bg-[#F7F7F7] border-[#C8C8C8] placeholder:text-[--color-borde2] focus:outline-none focus:ring-2 focus:ring-blue-400;
+  @apply w-full px-4 py-2 rounded-xl border text-[#393434] bg-[#F7F7F7] border-[#C8C8C8]
+         placeholder:text-[--color-borde2]
+         focus:outline-none
+         focus:invalid:border-red-600
+         focus:valid:border-blue-400;
 }
+
 
 
 .div_publicacion {
