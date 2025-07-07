@@ -31,8 +31,18 @@
         <input type="text" class="inputs_registro w-full">
       </div>
 
+       <div>
+        <label class="block text-sm font-medium text-gray-700 pb-0.5">Numero:</label>
+        <input type="text" class="inputs_registro w-full">
+      </div>
+
       <div>
         <label class="block text-sm font-medium text-gray-700 pb-0.5">Correo:</label>
+        <input type="text" class="inputs_registro w-full">
+      </div>
+
+       <div>
+        <label class="block text-sm font-medium text-gray-700 pb-0.5">Contraseña:</label>
         <input type="text" class="inputs_registro w-full">
       </div>
 
