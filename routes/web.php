@@ -44,9 +44,14 @@ Route::view('/favoritos', 'registered.favoritos');
 
 route::view('/chat/{id}', 'individualChatMobile')->name('chat.show');
 
+Route::view('/SellerConsumerProfile', 'vendedor.consumer-profile');
+
+Route::view('/ConsumerSellerProfile', 'consumer.seller-profile');
+
 // EDITAR PERFIL
 Route::view('/editconsumer', 'edit-consumer');
 Route::view('/editseller', 'edit-seller');
 
 // ADMINISTRADOR
 Route::view('/admin', 'control-panel');
+
