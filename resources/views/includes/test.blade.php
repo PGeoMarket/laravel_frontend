@@ -1,6 +1,6 @@
 
 
-    <section class="flex flex-wrap md:m-10 justify-center gap-1 md:gap-4 pt-12">
+    <section class="flex flex-wrap md:m-10 justify-center gap-1 md:gap-4 pt-12 md:pt-7">
 
         @for ($i = 0; $i < 13; $i++)
             {{-- Contenedor de publicaciones --}}
