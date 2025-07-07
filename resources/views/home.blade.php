@@ -2,9 +2,10 @@
 
 @section('content')
     {{-- Contenedor de filtrar y ubicacion --}}
-    <div class="fixed w-full flex justify-between items-center bg-background my-[-10px] py-2">
+<div class="flex justify-center">
+        <div class="fixed w-[90%] flex justify-between items-center bg-background my-[-10px] py-2 z-40">
         {{-- Filtrar --}}
-        <ul class="nav flex-1/3" x-data={open:false}>
+        <ul class="nav" x-data={open:false}>
             <li>
                 {{-- Boton filtrar --}}
                 <button class="text-white text-[16px] p-2 rounded-xl font-semibold text-center block min-w-[90px]"
@@ -25,18 +26,19 @@
 
         </ul>
         {{-- Ubicacion --}}
-        <div class="flex-1/2" x-data={open:false}>
+        <div class="z-50" x-data={open:false}>
             <div class="text-azulSecundario cursor-pointer flex items-center" x-on:click = "open = !open">
-                <img src="{{ asset('svg/icons/location.svg') }}" class="float-left mr-2" alt="">
+                <img src="{{ asset('svg/icons/location.svg') }}" class="mr-2" alt="">
                 Santander de Quilichao
             </div>
-            <div x-show = "open" x-init="if (open) document.body.classList.add('overflow-hidden')"
-                class="bg-gray-500/50 h-full w-full fixed top-0 left-0 z-50 select-none">
+            <div x-show = "open"
+                class="bg-gray-500/50 h-full w-full fixed top-0 left-0 select-none">
                 @include('components.mapa')
             </div>
         </div>
     </div>
 
+</div>
     @include('includes.test')
 
 @endsection
