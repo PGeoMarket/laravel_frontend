@@ -24,7 +24,7 @@
 
 
     </div>
-    <div class="flex justify-center my-3 ">
+    <div class="flex justify-center my-3 md:my-7 ">
         <div class="w-fit max-w-[80%] px-4 border-[1px] border-borde2 rounded-md">
             Santander de Quilichao
         </div>
