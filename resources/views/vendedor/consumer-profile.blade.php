@@ -11,9 +11,6 @@
             <div class="bg-[#06406A] rounded-full w-36 h-36 flex items-center justify-center">
                 <img src="{{ asset('svg/icons/profile.svg') }}" alt="Avatar" class="w-24 h-24">
             </div>
-            <button class="absolute bottom-4 right-2 bg-gray-100 rounded-full p-2 shadow cursor-pointer">
-                <img src="{{ asset('svg/icons/edit.svg') }}" alt="Editar" class="w-5 h-5">
-            </button>
         </div>
         <!-- Formulario de datos -->
         <form class="w-full flex flex-col gap-3">
@@ -26,9 +23,6 @@
             <label class="text-gray-700 text-sm">Correo</label>
             <input type="email" value="AlbertoMendoza@gmail.com" disabled class="rounded-md border border-gray-300 px-3 py-1 bg-gray-100 text-gray-500 text-base">
 
-            <button type="button" class="mt-4 px-4 py-1 rounded-md bg-gray-100 text-[#06406A] border border-gray-300 hover:bg-gray-200 self-center">
-                Editar datos
-            </button>
         </form>
     </div>
 

@@ -7,18 +7,30 @@
         <!-- Perfil vendedor -->
         <div
             class="w-full md:w-[370px] flex-shrink-0 flex flex-col border border-gray-300 rounded-xl p-4 md:p-6 bg-white relative mb-2 md:mb-0">
-            <!-- Botón editar datos -->
-            <button
-                class="absolute top-4 right-4 bg-gray-100 rounded-md px-4 py-1 text-sm text-gray-700 shadow hover:bg-gray-200 cursor-pointer">
-                Editar datos
-            </button>
+            <!-- Botón más datos -->
+            <div x-data="{ open: false }" class="absolute top-2 right-2 z-10">
+                                <button @click="open = !open"
+                                    class="bg-gray-100 rounded-full w-7 h-7 flex items-center justify-center text-gray-500 hover:bg-gray-200 focus:outline-none">
+                                    <svg class="w-5 h-5 cursor-pointer" fill="none" stroke="currentColor"
+                                        stroke-width="2" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="1.5" />
+                                        <circle cx="12" cy="6" r="1.5" />
+                                        <circle cx="12" cy="18" r="1.5" />
+                                    </svg>
+                                </button>
+                                <div x-show="open" @click.away="open = false"
+                                    class="mt-1 bg-white border rounded shadow px-2 py-1 text-xs absolute right-0 top-7 min-w-[80px]"
+                                    x-transition>
+                                    <button
+                                        class="block text-[#06406A] hover:underline w-full text-left cursor-pointer">Calificar</button>
+                                    <button
+                                        class="block text-red-500 hover:underline w-full text-left cursor-pointer">Reportar</button>
+                                </div>
+                            </div>
             <!-- icono perfil -->
             <div class="flex flex-col items-center mb-4 mt-2">
                 <div class="bg-[#06406A] rounded-full w-24 h-24 flex items-center justify-center mb-2 relative">
                     <img src="{{ asset('svg/icons/profile.svg') }}" alt="Avatar" class="w-14 h-14">
-                    <button class="absolute bottom-2 right-2 bg-gray-100 rounded-full p-2 shadow">
-                        <img src="{{ asset('svg/icons/edit.svg') }}" alt="Editar" class="w-5 h-5 cursor-pointer">
-                    </button>
                 </div>
             </div>
             <!-- Info -->
@@ -33,10 +45,6 @@
             <div class="flex items-end gap-2 mt-6 w-full mb-8">
                 <div class="relative">
                     <img src="{{ asset('img/map.png') }}" alt="Mapa" class="w-40 h-20 rounded-md border object-cover">
-                    <button
-                        class="absolute left-2  bg-[#06406A] text-white rounded-md px-4 py-1 text-base font-semibold shadow hover:bg-[#05345a] cursor-pointer">
-                        Editar ubicación
-                    </button>
                 </div>
                 <div class="flex ml-auto items-center h-full">
                     <img src="{{ asset('svg/icons/stars.svg') }}" alt="Estrellas" class="h-10">
@@ -60,24 +68,7 @@
                     @for ($i = 0; $i < 9; $i++)
                         <div
                             class="relative border rounded-lg p-3 bg-white shadow flex flex-col justify-between cursor-pointer aspect-[4/3] max-h-64">
-                            <!-- Botón de menú con Alpine.js -->
-                            <div x-data="{ open: false }" class="absolute top-2 right-2 z-10">
-                                <button @click="open = !open"
-                                    class="bg-gray-100 rounded-full w-7 h-7 flex items-center justify-center text-gray-500 hover:bg-gray-200 focus:outline-none">
-                                    <svg class="w-5 h-5 cursor-pointer" fill="none" stroke="currentColor" stroke-width="2"
-                                        viewBox="0 0 24 24">
-                                        <circle cx="12" cy="12" r="1.5" />
-                                        <circle cx="12" cy="6" r="1.5" />
-                                        <circle cx="12" cy="18" r="1.5" />
-                                    </svg>
-                                </button>
-                                <div x-show="open" @click.away="open = false"
-                                    class="mt-1 bg-white border rounded shadow px-2 py-1 text-xs absolute right-0 top-7 min-w-[80px]"
-                                    x-transition>
-                                    <button class="block text-[#06406A] hover:underline w-full text-left cursor-pointer">Editar</button>
-                                    <button class="block text-red-500 hover:underline w-full text-left cursor-pointer">Eliminar</button>
-                                </div>
-                            </div>
+
                             <img src="{{ asset('img/arroz.png') }}" alt="Producto"
                                 class="w-24 h-24 object-contain mx-auto mt-2">
                             <div class="flex flex-col justify-end flex-1">
@@ -96,8 +87,8 @@
                 <div class="flex flex-col gap-3">
                     @for ($i = 0; $i < 16; $i++)
                         <div class="flex items-center border rounded-lg bg-gray-100 shadow px-3 py-2 relative">
-                            <img src="{{ asset('svg/icons/profile.svg') }}" class="w-10 h-10 bg-[#06406A] rounded-full mr-3 cursor-pointer"
-                                alt="avatar">
+                            <img src="{{ asset('svg/icons/profile.svg') }}"
+                                class="w-10 h-10 bg-[#06406A] rounded-full mr-3 cursor-pointer" alt="avatar">
                             <div class="flex-1">
                                 <div class="font-semibold text-sm text-[#06406A]">@usuario_17</div>
                                 <div class="text-xs text-gray-600">¡Hace 1 mes! Todo fácil. ¡Súper! & Goodds</div>

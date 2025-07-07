@@ -42,3 +42,7 @@ Route::view('/SellerProfile', 'vendedor.profile');
 Route::view('/favoritos', 'registered.favoritos');
 
 route::view('/chat/{id}', 'individualChatMobile')->name('chat.show');
+
+Route::view('/SellerConsumerProfile', 'vendedor.consumer-profile');
+
+Route::view('/ConsumerSellerProfile', 'consumer.seller-profile');
