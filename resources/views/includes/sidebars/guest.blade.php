@@ -3,7 +3,7 @@
 @section('content')
 
 <div>
-    <div class="border-1 w-[60%] md:w-fit h-screen">
+    <div class="border-1 w-[60%] md:w-fit h-screenz">
         <!-- Sección superior (perfil) -->
         <div class="bg-white flex flex-col items-center p-4 ">
             <img src="{{ asset('svg/icons/userProfiel.svg') }}" alt="Perfil" class="w-12 h-12 md:w-auto md:h-auto">
