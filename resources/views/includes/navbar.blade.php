@@ -26,7 +26,7 @@
     </nav>
 
 
-    <div class="fixed top-16 right-0 h-screen w-[60%] md:w-fit bg-white shadow-lg z-40 overflow-y-auto transition-transform duration-300 transform"
+    <div class="fixed top-16 right-0 h-screen w-[60%] md:w-fit bg-white shadow-lg z-49 overflow-y-auto transition-transform duration-300 transform"
         x-on:click.away="open = false" x-show="open" x-transition>
 
         <div class=" border-borde1 h-screen overflow-hidden">
