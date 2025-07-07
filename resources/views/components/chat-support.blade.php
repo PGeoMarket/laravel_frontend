@@ -1,9 +1,7 @@
 <div class="grid grid-rows-[auto_1fr_auto] h-full">
     <!-- Header -->
     <div class="grid border-b-1 border-borde2 rounded-lg p-2 grid-cols-[auto_auto_1fr]">
-        <img src="{{ asset('svg/icons/back-icon.svg') }}" class="cursor-pointer" onclick="history.back()">
-        <div
-            class="w-16 h-16 md:w-20 md:h-20 bg-gray-100 overflow-hidden rounded-full shadow row-span-2 mr-1">
+        <div class="w-16 h-16 md:w-20 md:h-20 bg-gray-100 overflow-hidden rounded-full shadow row-span-2 mr-1">
             <img src="{{ asset('svg/icons/userProfiel2.svg') }}" alt="" class="w-full h-full object-cover" />
         </div>
         <p class="text-azulPotente font-semibold text-[0.9em] mt-1 md:text-[2em]">
@@ -11,7 +9,14 @@
         </p>
         <div class="row-start-2 col-start-3 flex justify-between items-center">
             <p class="text-sm text-textosNoNegro">#342</p>
-            <button class="btn_negative">rechazar</button>
+            <div class="gap-4">
+                <button class="btn_negative ">
+                    Rechazar
+                </button>
+                <button class="btn_negative">
+                    Cerrar
+                </button>
+            </div>
         </div>
     </div>
 
@@ -22,15 +27,18 @@
         </div>
         <div class="flex flex-col space-y-2">
             <div class="max-w-[70%] bg-gray-100 text-black px-4 py-2 rounded-lg w-fit">Hola, ¿cómo estás?</div>
-            <div class="max-w-[70%] bg-azulSecundario text-white px-4 py-2 rounded-lg w-fit self-end">Bien, gracias. ¿Y tú?</div>
+            <div class="max-w-[70%] bg-azulSecundario text-white px-4 py-2 rounded-lg w-fit self-end">Bien, gracias. ¿Y
+                tú?</div>
         </div>
 
         <div class="flex justify-center">
             <p class="text-sm bg-gray-200 text-gray-700 px-4 py-1 rounded-full">Ayer</p>
         </div>
         <div class="flex flex-col space-y-2">
-            <div class="max-w-[70%] bg-gray-100 text-black px-4 py-2 rounded-lg w-fit">Te mandé la foto del producto.</div>
-            <div class="max-w-[70%] bg-azulSecundario text-white px-4 py-2 rounded-lg w-fit self-end">¡Ya la vi! Gracias.</div>
+            <div class="max-w-[70%] bg-gray-100 text-black px-4 py-2 rounded-lg w-fit">Te mandé la foto del producto.
+            </div>
+            <div class="max-w-[70%] bg-azulSecundario text-white px-4 py-2 rounded-lg w-fit self-end">¡Ya la vi!
+                Gracias.</div>
         </div>
     </div>
 

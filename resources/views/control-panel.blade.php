@@ -13,12 +13,10 @@
 
             <!-- Lado derecho: Botones -->
             <div class="flex gap-2">
-                <button
-                    @click="activeTab = 'soporte'; showChatModal = false"
+                <button @click="activeTab = 'soporte'; showChatModal = false"
                     :class="activeTab === 'soporte' ? 'bg-[#06406A] text-white' : 'bg-gray-200 text-gray-700'"
                     class="px-3 md:px-4 py-1 rounded-md text-xs md:text-sm font-semibold shadow">Soporte</button>
-                <button
-                    @click="activeTab = 'reportes'; showChatModal = false"
+                <button @click="activeTab = 'reportes'; showChatModal = false"
                     :class="activeTab === 'reportes' ? 'bg-[#06406A] text-white' : 'bg-gray-200 text-gray-700'"
                     class="px-3 md:px-4 py-1 rounded-md text-xs md:text-sm font-semibold shadow">Reportes</button>
             </div>
@@ -30,7 +28,8 @@
             <div x-show="activeTab === 'reportes'" class="overflow-y-auto flex flex-col gap-2 pr-1">
                 <!-- Más chats -->
                 @for ($i = 0; $i < 10; $i++)
-                    <div class="border-3 border-borde1 rounded-lg p-2 grid grid-cols-[auto_1fr_auto] grid-rows-[auto_auto] items-center cursor-pointer">
+                    <div @click="window.innerWidth >= 768 ? showChatModal = true : window.location.href = '{{ route('chat.show', ['id' => $i]) }}'"
+                        class="border-3 border-borde1 rounded-lg p-2 grid grid-cols-[auto_1fr_auto] grid-rows-[auto_auto] items-center cursor-pointer">
                         <div
                             class="w-16 h-16 md:w-20 md:h-20 bg-gray-100 overflow-hidden rounded-full shadow row-span-2 mr-1">
                             <img src="{{ asset('img/florhuila.png') }}" alt="" class="w-full h-full object-cover" />
@@ -49,7 +48,7 @@
             </div>
 
             <!-- Lista de soporte -->
-            <div x-show="activeTab === 'soporte'" class="overflow-y-auto flex flex-col gap-2 pr-1">
+            <div x-show="activeTab === 'soporte'" class="overflow-y-scroll flex flex-col gap-2 pr-1">
                 <!-- Más chats -->
                 @for ($i = 0; $i < 10; $i++)
                     <div @click="window.innerWidth >= 768 ? showChatModal = true : window.location.href = '{{ route('chat.show', ['id' => $i]) }}'"
@@ -72,8 +71,16 @@
             </div>
 
             <!-- Panel del chat - Solo visible en desktop y cuando activeTab sea 'soporte' -->
-            <div x-show="showChatModal && activeTab === 'soporte'" x-cloak class="hidden md:block border-1 border-borde1 rounded-lg">
+            <div x-show="showChatModal && activeTab === 'soporte'" x-cloak
+                class="hidden md:block border-1 border-borde1 rounded-lg">
                 @include('components.chat-support')
+            </div>
+
+            <!-- Panel del chat - Solo visible en desktop y cuando activeTab sea 'soporte' -->
+
+            <div x-show="showChatModal && activeTab === 'reportes'" x-cloak
+                class="hidden md:block border border-borde1 rounded-lg h-full overflow-hidden">
+                @include('components.chat-report')
             </div>
         </div>
     </div>
