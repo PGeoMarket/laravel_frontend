@@ -1,5 +1,6 @@
 <div x-data="{ open: false }" class="">
-    <nav class="bg-[#f8fafc]  border-b border-[#e5e7eb] px-4 py-2 flex items-center justify-between fixed w-full h-16 z-50">
+    {{-- El nav y div hermanos tiene z-50 por separado, ambos deben tener el mismo valor en caso de modificarlo --}}
+    <nav class="bg-[#f8fafc]  border-b border-[#e5e7eb] px-4 py-2 flex items-center justify-between fixed w-full h-16 z-40">
         <!-- logo y nombre -->
         <div class="flex items-center mr-3">
             <img src="{{ asset('svg/icons/logo.svg') }}" alt="GeoMarket Logo" class="cursor-pointer" />
@@ -25,7 +26,7 @@
     </nav>
 
 
-    <div class="fixed top-16 right-0 h-screen w-[60%] md:w-fit bg-white shadow-lg z-50 overflow-y-auto transition-transform duration-300 transform"
+    <div class="fixed top-16 right-0 h-screen w-[60%] md:w-fit bg-white shadow-lg z-40 overflow-y-auto transition-transform duration-300 transform"
         x-on:click.away="open = false" x-show="open" x-transition>
 
         <div class=" border-borde1 h-screen overflow-hidden">

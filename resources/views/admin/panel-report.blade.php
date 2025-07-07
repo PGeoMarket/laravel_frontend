@@ -2,7 +2,7 @@
 
 @section('content')
     <div x-data="{ showChatModal: false }"
-        class="bg-white border-3 border-borde1 rounded-lg relative h-[calc(100vh-(4rem+24px))] z-10 p-2 grid grid-rows-[auto_1fr]">
+        class="bg-white border-3 border-borde1 rounded-lg relative h-[calc(100vh-(4rem+24px))] z-10 p-2 grid grid-rows-[auto_1fr] overflow-hidden">
 
         <!-- Botón de volver -->
         <img src="{{ asset('svg/icons/back-icon.svg') }}" class="absolute top-2 left-2 cursor-pointer"
@@ -54,7 +54,7 @@
                 x-cloak
                 class="hidden md:block border-1 border-borde1 rounded-lg"
             >
-                @include('components.chat-panel')
+                @include('admin.chat-report')
             </div>
         </div>
     </div>

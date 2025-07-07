@@ -12,6 +12,7 @@ route::view('/slidebar/admin','includes.sidebars.admin');
 
 Route::view('/login', 'includes.login');
 
+// FORMULARIOS REGISTROS
 Route::view('/registroC', 'Registro_consumidor');
 Route::view('/registroV', 'Registro_vendedor');
 
@@ -46,3 +47,11 @@ route::view('/chat/{id}', 'individualChatMobile')->name('chat.show');
 Route::view('/SellerConsumerProfile', 'vendedor.consumer-profile');
 
 Route::view('/ConsumerSellerProfile', 'consumer.seller-profile');
+
+// EDITAR PERFIL
+Route::view('/editconsumer', 'edit-consumer');
+Route::view('/editseller', 'edit-seller');
+
+// ADMINISTRADOR
+Route::view('/admin', 'control-panel');
+
