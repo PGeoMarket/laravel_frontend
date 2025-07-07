@@ -31,7 +31,8 @@
                 <span class="text-[24px] md:text-[30px] ">-$1</span>
             </div>
         </div>
-         {{-- Contenedor de publicacion) --}}
+        @for ($i = 0; $i < 11; $i++)
+             {{-- Contenedor de publicacion) --}}
         <div
             class="div_publicacion">
             {{-- Imagen --}}
@@ -57,12 +58,8 @@
                 <span class="text-[24px] md:text-[30px] ">-$1</span>
             </div>
         </div>
-
-        
-
-
-
-        
+       
+        @endfor
    </section>
 
 @endsection
