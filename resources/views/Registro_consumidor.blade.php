@@ -5,8 +5,8 @@
   <div class="bg-white shadow-lg rounded-xl p-6 sm:p-10 w-full max-w-md relative">
 
     <!-- Botón volver (imagen) -->
-    <div class="absolute top-4 left-4">
-      <img src="{{ asset('svg/icons/back-icon.svg') }}" alt="Volver" class="h-8 w-8">
+    <div class="absolute top-4 left-4 w-2xs">
+      <img src="{{ asset('svg/icons/back-icon.svg') }}" class="cursor-pointer" onclick="history.back()">
     </div>
 
     <!-- Logo principal (imagen) -->
