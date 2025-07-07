@@ -11,7 +11,7 @@
                 relative">
 
         {{-- Botón volver con ícono --}}
-        <a href="{{ url()->previous() }}" class="absolute top-4 left-4">
+        <a href="{{ url()->previous() }}" class="absolute top-4 left-4 cursor-pointer">
             <img src="{{ asset('svg/icons/back-icon.svg') }}" alt="Volver" class="w-8 h-8">
         </a>
 
