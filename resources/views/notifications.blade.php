@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class=" bg-white border-3 border-borde1  rounded-lg  relative h-[calc(100vh-(4rem+24px))] z-10 p-2 flex flex-col md:w-1/2 mx-auto">
+    <div class=" bg-white border-3 border-borde1  rounded-lg  relative h-[calc(100vh-(4rem+24px))] z-10 p-2 flex flex-col md:w-1/3 mx-auto">
         <div>
             <img src="{{ asset('svg/icons/back-icon.svg') }}" class="absolute top-2 left-2 cursor-pointer"
                 onclick="history.back()">

@@ -36,14 +36,14 @@
                         <div class="w-16 h-16 md:w-20 md:h-20 bg-gray-100 overflow-hidden rounded-full shadow row-span-2 mr-1">
                             <img src="{{ asset('img/florhuila.png') }}" alt="" class="w-full h-full object-cover" />
                         </div>
-                        <p class="text-azulPotente font-semibold text-[0.9em] mt-1 md:text-[1.2em]">
+                        <p class="text-azulPotente font-semibold text-[1.3em] mt-1 md:text-[1.7em]">
                             Harina xxxxg $xxxxx
                         </p>
                         <div class="row-span-2 flex flex-col justify-between items-end h-full self-stretch text-sm text-textosNoNegro">
                             <p>hoy</p>
                             <p>23:25</p>
                         </div>
-                        <p class="text-textosNoNegro text-[0.8em] md:text-[1em]">Juan: valee gracias. uwu</p>
+                        <p class="text-textosNoNegro text-[0.8em] md:text-[1.3em]">Juan: valee gracias. uwu</p>
                     </div>
                 @endfor
             </div>

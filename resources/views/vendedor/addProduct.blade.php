@@ -44,13 +44,13 @@
                 <div class=" grid grid-rows-[auto_1fr] md:p-5">
 
                     {{-- Inputs para nombre, precio y categoría del producto --}}
-                    <div class="flex flex-col  h-fit">
+                    <div class="flex flex-col  h-fit space-y-4">
                         <input type="text" name="productName"
-                            class="bg-[#EDEDED] border-1 border-borde2 p-1 rounded-md mb-3"
+                            class="inputs_registro"
                             placeholder="Nombre del producto" required>
 
                         <input type="number" name="productPrice"
-                            class="bg-[#EDEDED] border-1 border-borde2 p-1 rounded-md mb-3"
+                            class="inputs_registro" 
                             placeholder="Precio del producto" required>
 
                         <div>
