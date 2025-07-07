@@ -47,3 +47,6 @@ route::view('/chat/{id}', 'individualChatMobile')->name('chat.show');
 // EDITAR PERFIL
 Route::view('/editconsumer', 'edit-consumer');
 Route::view('/editseller', 'edit-seller');
+
+// ADMINISTRADOR
+Route::view('/admin', 'control-panel');
