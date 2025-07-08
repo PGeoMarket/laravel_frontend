@@ -24,7 +24,7 @@ Route::view('/addProduct', 'vendedor.addProduct');
 
 Route::view('/home', 'home');
 
-Route::view('/registrarse_como', 'registrarse_como');
+Route::view('/registrarse_como', 'Registrarse_como');
 
 Route::view('/editProduct', 'vendedor.editProduct');
 

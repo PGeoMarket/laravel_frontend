@@ -58,3 +58,7 @@
 .div_tituloPrecio {
     @apply flex flex-col font-medium h-[35%] justify-between text-textosNoNegro py-2
 }
+
+.app_oscuro {
+    @apply bg-black/75
+}
